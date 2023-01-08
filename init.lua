@@ -1,0 +1,6 @@
+require('plugins')
+require('settings')
+require('keymaps')
+require('colorscheme')
+require('plugins-configs')
+require('lsp')
