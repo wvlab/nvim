@@ -5,21 +5,29 @@ return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
     use "nvim-lua/plenary.nvim"
 
+    -- deps
+    use "kyazdani42/nvim-web-devicons"
+
     -- lualine
-    use {"nvim-lualine/lualine.nvim",
-		requires = {
-            "kyazdani42/nvim-web-devicons",
-            opt = true
-        },
-	}
-
-    use "feline-nvim/feline.nvim"
-
-    -- file tree
-    use {"kyazdani42/nvim-tree.lua",
+    use { "nvim-lualine/lualine.nvim",
         requires = {
             "kyazdani42/nvim-web-devicons",
-            opt = true
+            opt = true,
+        },
+    }
+
+    -- tabs
+    use { "romgrk/barbar.nvim",
+        requires = {
+            "kyazdani42/nvim-web-devicons",
+            opt = true,
+        },
+    }
+
+    -- file tree
+    use { "kyazdani42/nvim-tree.lua",
+        requires = {
+            "kyazdani42/nvim-web-devicons",
         },
     }
     use "mbbill/undotree"
@@ -55,4 +63,7 @@ return require("packer").startup(function(use)
 
     -- Latex support
     use "lervag/vimtex"
+
+    -- Emmet for html support
+    use "mattn/emmet-vim"
 end)

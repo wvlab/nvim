@@ -5,6 +5,7 @@ local plugins = {
     "luasnip",
     "vimtex",
     "undotree",
+    "barbar",
 }
 
 for _, plugin in pairs(plugins) do
