@@ -34,7 +34,10 @@ opt.swapfile = false
 opt.backup = false
 opt.undofile = true
 
-opt.termguicolors = true -- true colors
+--opt.termguicolors = true -- true colors
 
 opt.mouse = "" -- disable mouse
 opt.updatetime = 300
+
+opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ," ..
+              "фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
