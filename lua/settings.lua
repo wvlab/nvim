@@ -27,7 +27,7 @@ opt.smartindent = true
 opt.hlsearch = false
 opt.ignorecase = true
 
-opt.cmdheight = 2 -- make command prompt larger
+opt.cmdheight = 2    -- make command prompt larger
 opt.showmode = false -- lualine shows it
 
 opt.swapfile = false
@@ -40,4 +40,4 @@ opt.mouse = "" -- disable mouse
 opt.updatetime = 300
 
 opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ," ..
-              "фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+    "фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
