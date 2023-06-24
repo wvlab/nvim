@@ -3,11 +3,11 @@ local opt = vim.opt
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-opt.fileencoding = 'utf-8'
+opt.fileencoding = "utf-8"
 
 
 opt.cursorline = true
-opt.colorcolumn = '80'
+opt.colorcolumn = "80"
 opt.scrolloff = 8
 opt.number = true
 opt.relativenumber = true
@@ -34,9 +34,9 @@ opt.swapfile = false
 opt.backup = false
 opt.undofile = true
 
---opt.termguicolors = true -- true colors
+opt.termguicolors = true -- true colors
 
-opt.mouse = "" -- disable mouse
+opt.mouse = ""           -- disable mouse
 opt.updatetime = 300
 
 opt.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ," ..
