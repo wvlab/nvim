@@ -51,11 +51,13 @@ return require("packer").startup(function(use)
 
     -- LSP
     use {
-        "neovim/nvim-lspconfig",   -- enable LSP
-        "williamboman/mason.nvim", -- language server installer
+        "neovim/nvim-lspconfig",           -- enable LSP
+        "williamboman/mason.nvim",         -- language server installer
         "williamboman/mason-lspconfig.nvim",
+        "jose-elias-alvarez/null-ls.nvim", -- make formatters part of lsps
+        "jay-babu/mason-null-ls.nvim"
     }
-    use "tamago324/nlsp-settings.nvim" -- language server settings in json
+    use "tamago324/nlsp-settings.nvim"     -- language server settings in json
 
     use {
         "nvim-telescope/telescope.nvim",
