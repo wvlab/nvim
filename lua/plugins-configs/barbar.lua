@@ -25,6 +25,8 @@ require("barbar").setup({
     minimum_padding = 0,
     maximum_length = 15,
 
+    insert_at_end = true,
+
     sidebar_filetypes = {
         NvimTree = true,
         undotree = { text = "undotree" },
