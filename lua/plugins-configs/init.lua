@@ -1,3 +1,5 @@
+local uv = vim.loop
+
 local plugins = {
     "lualine",
     "nvim-tree",
@@ -6,6 +8,7 @@ local plugins = {
     "vimtex",
     "undotree",
     "barbar",
+    "telescope"
 }
 
 for _, plugin in pairs(plugins) do

@@ -3,16 +3,14 @@ vim.cmd [[packadd packer.nvim]]
 return require("packer").startup(function(use)
     -- packer itself
     use "wbthomason/packer.nvim"
+    -- deps for other plugins
     use "nvim-lua/plenary.nvim"
-
-    -- deps
     use "kyazdani42/nvim-web-devicons"
 
     -- lualine
     use { "nvim-lualine/lualine.nvim",
         requires = {
             "kyazdani42/nvim-web-devicons",
-            opt = true,
         },
     }
 
@@ -20,7 +18,6 @@ return require("packer").startup(function(use)
     use { "romgrk/barbar.nvim",
         requires = {
             "kyazdani42/nvim-web-devicons",
-            opt = true,
         },
     }
 
@@ -48,8 +45,7 @@ return require("packer").startup(function(use)
         "saadparwaiz1/cmp_luasnip", -- snippet completions
         "hrsh7th/cmp-nvim-lsp",
     }
-    -- snippets
-    use "L3MON4D3/LuaSnip" --snippet engine
+    use "L3MON4D3/LuaSnip" -- snippet engine
 
     use "nvim-treesitter/nvim-treesitter"
 
@@ -61,6 +57,10 @@ return require("packer").startup(function(use)
     }
     use "tamago324/nlsp-settings.nvim" -- language server settings in json
 
+    use {
+        "nvim-telescope/telescope.nvim",
+        requires = { "nvim-lua/plenary.nvim" }
+    }
     -- Latex support
     use "lervag/vimtex"
 
