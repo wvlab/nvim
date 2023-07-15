@@ -1,9 +1,9 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require("packer").startup(function(use)
-    -- packer itself
-    use "wbthomason/packer.nvim"
-    -- deps for other plugins
+    use "wbthomason/packer.nvim" -- packer itself
+
+    -- deps
     use "nvim-lua/plenary.nvim"
     use "kyazdani42/nvim-web-devicons"
 
@@ -21,13 +21,9 @@ return require("packer").startup(function(use)
         },
     }
 
-    -- file tree
-    use { "kyazdani42/nvim-tree.lua",
-        requires = {
-            "kyazdani42/nvim-web-devicons",
-        },
-    }
     use "mbbill/undotree"
+
+    use "lewis6991/gitsigns.nvim"
 
     -- themes
     use {
@@ -57,7 +53,7 @@ return require("packer").startup(function(use)
         "jose-elias-alvarez/null-ls.nvim", -- make formatters part of lsps
         "jay-babu/mason-null-ls.nvim"
     }
-    use "tamago324/nlsp-settings.nvim"     -- language server settings in json
+    use "tamago324/nlsp-settings.nvim" -- language server settings in json
 
     use {
         "nvim-telescope/telescope.nvim",
