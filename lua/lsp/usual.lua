@@ -26,6 +26,15 @@ local function on_attach(_, bufnr)
     end, bufopts)
 end
 
+lsp["hls"].setup {
+    filetypes = { "haskell", "lhaskell", "cabal" },
+    on_attach = on_attach,
+}
+
+lsp["dartls"].setup {
+    on_attach = on_attach,
+}
+
 require("mason-lspconfig").setup_handlers {
     function(server_name)
         lsp[server_name].setup {
