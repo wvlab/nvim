@@ -10,11 +10,7 @@ map("n", "N", "Nzzzv", opts)
 -- Navigate buffers
 map("n", "<S-l>", ":bnext<CR>", opts)
 map("n", "<S-h>", ":bprevious<CR>", opts)
-map("n", "<leader>c", ":BufferClose<CR>", opts)
-
--- NvimTree
-map("n", "<C-f>", ":NvimTreeFocus<CR>", opts)
-map("n", "<C-c", ":NvimTreeClose<CR>", opts)
+map("n", "<leader>cc", ":BufferClose<CR>", opts)
 
 -- Telescope
 map("n", "<leader>ff", telescope.find_files, opts)
