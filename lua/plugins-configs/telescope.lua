@@ -13,4 +13,11 @@ cursor_theme.layout_config = {
 
 telescope.setup {
     defaults = cursor_theme,
+    extensions = {
+        ["ui-select"] = {
+            defaults = cursor_theme,
+        }
+    }
 }
+
+telescope.load_extension("ui-select")

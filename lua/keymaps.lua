@@ -16,6 +16,7 @@ map("n", "<leader>cc", ":BufferClose<CR>", opts)
 map("n", "<leader>ff", telescope.find_files, opts)
 map("n", "<leader>fg", telescope.live_grep, opts)
 map("n", "<leader>fl", telescope.lsp_references, opts)
+map("n", "<leader>fa", vim.lsp.buf.code_action, opts)
 
 -- UndoTree
 function UndoTreeFocus()
