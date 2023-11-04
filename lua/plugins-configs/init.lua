@@ -7,6 +7,7 @@ local plugins = {
     "barbar",
     "telescope",
     "gitsigns",
+    "oil",
 }
 
 for _, plugin in pairs(plugins) do

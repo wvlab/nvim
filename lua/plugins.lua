@@ -23,6 +23,8 @@ return require("packer").startup(function(use)
 
     use "mbbill/undotree"
 
+    use "stevearc/oil.nvim"
+
     use "lewis6991/gitsigns.nvim"
 
     -- themes

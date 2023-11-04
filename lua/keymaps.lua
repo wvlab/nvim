@@ -18,6 +18,9 @@ map("n", "<leader>fg", telescope.live_grep, opts)
 map("n", "<leader>fl", telescope.lsp_references, opts)
 map("n", "<leader>fa", vim.lsp.buf.code_action, opts)
 
+-- oil
+map("n", "-", "<CMD>Oil<CR>")
+
 -- UndoTree
 function UndoTreeFocus()
     vim.cmd [[UndotreeShow]]
