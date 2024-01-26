@@ -52,7 +52,7 @@ return require("packer").startup(function(use)
         "neovim/nvim-lspconfig",           -- enable LSP
         "williamboman/mason.nvim",         -- language server installer
         "williamboman/mason-lspconfig.nvim",
-        "jose-elias-alvarez/null-ls.nvim", -- make formatters part of lsps
+        "nvimtools/none-ls.nvim", -- make formatters part of lsps
         "jay-babu/mason-null-ls.nvim"
     }
     use "tamago324/nlsp-settings.nvim" -- language server settings in json

@@ -1,4 +1,4 @@
-local status, mnull, null
+local status, mnull
 
 status, mnull = pcall(require, "mason-null-ls")
 if not status then
