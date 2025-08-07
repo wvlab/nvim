@@ -20,5 +20,6 @@ if not status then
 end
 
 require("null-ls").setup({
-    sources = {}
+    sources = {
+    }
 })

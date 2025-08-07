@@ -28,3 +28,8 @@ function UndoTreeFocus()
 end
 
 map("n", "<S-u>", UndoTreeFocus, opts)
+
+-- lsp
+vim.keymap.set("n", "<leader>fm", function() vim.lsp.buf.format { async = true } end, opts)
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, opts)
+vim.keymap.set("n", "<leader>gD", vim.lsp.buf.definition, opts)
