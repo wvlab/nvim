@@ -8,15 +8,12 @@ map("n", "n", "nzzzv", opts)
 map("n", "N", "Nzzzv", opts)
 
 -- Navigate buffers
-map("n", "<S-l>", ":bnext<CR>", opts)
-map("n", "<S-h>", ":bprevious<CR>", opts)
-map("n", "<leader>cc", ":BufferClose<CR>", opts)
+map("n", "<leader>cc", "<CMD>bdelete<CR>", opts)
 
 -- Telescope
 map("n", "<leader>ff", telescope.find_files, opts)
 map("n", "<leader>fg", telescope.live_grep, opts)
 map("n", "<leader>fl", telescope.lsp_references, opts)
-map("n", "<leader>fa", vim.lsp.buf.code_action, opts)
 
 -- oil
 map("n", "-", "<CMD>Oil<CR>")
@@ -31,5 +28,3 @@ map("n", "<S-u>", UndoTreeFocus, opts)
 
 -- lsp
 vim.keymap.set("n", "<leader>fm", function() vim.lsp.buf.format { async = true } end, opts)
-vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, opts)
-vim.keymap.set("n", "<leader>gD", vim.lsp.buf.definition, opts)
