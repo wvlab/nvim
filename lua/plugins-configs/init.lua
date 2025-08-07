@@ -8,6 +8,7 @@ local plugins = {
     "telescope",
     "gitsigns",
     "oil",
+    "blink",
 }
 
 for _, plugin in pairs(plugins) do
