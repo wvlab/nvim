@@ -50,4 +50,6 @@ return require("packer").startup(function(use)
     use "lervag/vimtex"
 
     use "mattn/emmet-vim"
+
+    use "echaya/neowiki.nvim"
 end)

@@ -1,4 +1,4 @@
-local status, mnull
+local status, mnull, null
 
 status, mnull = pcall(require, "mason-null-ls")
 if not status then
@@ -13,13 +13,14 @@ mnull.setup({
 })
 
 
-status, mnull = pcall(require, "null-ls")
+status, null = pcall(require, "null-ls")
 if not status then
     print("null-ls is not installed")
     return
 end
 
-require("null-ls").setup({
+null.setup({
     sources = {
+        null.builtins.formatting.fnlfmt,
     }
 })
